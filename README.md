@@ -1,35 +1,29 @@
 # Next.js Application Setup Guide
 
+## Repository
+Clone the repository:
+git clone https://github.com/nehanya/Front-End.git
+cd Front-End
+
+## Installation
+Install dependencies:
+npm install
+
+## Environment Variables
+Create a `.env.local` file and add:
+
+## Running the Application
+npm run dev
+The app runs at `http://localhost:3000/`.
+
+## Default Login Credentials
+Username: emilys
+Password: emilyspass
+
 ## Prerequisites
 Ensure you have the following installed on your machine:
 - **Node.js v22** (Download from [nodejs.org](https://nodejs.org/))
 - **npm** (comes with Node.js)
-- **Git** (optional, for cloning the repository)
-
-## Clone the Repository
-```sh
-git clone https://github.com/nehanya/Front-End.git
-cd Front-End
-```
-
-## Install Dependencies
-```sh
-npm install
-```
-
-## Environment Variables
-Create a `.env` file in the root directory and configure necessary environment variables:
-```
-NEXT_PUBLIC_API_URL=your_backend_url
-JWT_SECRET=your_jwt_secret
-SESSION_TIMEOUT=600 # 10 minutes in seconds
-```
-
-## Running the Application
-```sh
-npm run dev
-```
-The application will start at `http://localhost:3000/`.
 
 ## Features and Functionality
 
@@ -47,7 +41,7 @@ The application will start at `http://localhost:3000/`.
 ### 4. Auto-Logout Mechanism
 - If the user is idle for **10 minutes**, a popup appears with a **60-second countdown**.
 - The popup provides two options:
-  - **Stay Login:** Resets the timer to 10 minutes.
+  - **Stay Login:** Resets the timer to 5 minutes.
   - **Logout:** Logs out the user immediately.
 - Any interaction within the countdown extends the session.
 
@@ -65,4 +59,5 @@ The application will start at `http://localhost:3000/`.
 
 ## Conclusion
 This project provides a foundation for an event and task management system with authentication and session management. Feel free to extend its features as per requirements.
+
 
